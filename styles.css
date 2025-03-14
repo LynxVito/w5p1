@@ -97,3 +97,38 @@ body {
     left:100%;
     bottom:0%;
 }
+
+.move-left {
+    animation: flying-plane 5.0s infinite linear;
+}
+
+@keyframes flying-plane {
+    from {
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(-810px);
+    }
+}
+
+.shake-plane {
+    animation: shake 1.0s infinite ease;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(5px, 3px);
+    }
+    50% {
+        transform: translate(-2px, -2px);
+    }
+    75% {
+        transform: translate(-3px, 2px);
+    }
+    100% {
+        transform: translate(0px, -3px);
+    }
+}
